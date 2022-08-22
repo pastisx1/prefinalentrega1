@@ -39,11 +39,14 @@ namespace prefinalentrega1.ADO
                         producto.IdUsuario = Convert.ToInt32(row["IdUsuario"]);
 
                         productos.Add(producto);
+                
                     }
+                    sqlCommand.Connection.Close();
                 }
+
             }
 
-
+            return productos;
         }
     }
         

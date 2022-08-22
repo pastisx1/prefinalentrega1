@@ -14,7 +14,7 @@ namespace prefinalentrega1.ADO
         public static List<ProductoVendido> GetProductosVendidos(int id)
         {
             List<ProductoVendido> listProductosVendidos = new List<ProductoVendido>();
-            List<Producto> listProductos = ProductoHandler.GetProductos(id);
+            List<Producto> Productos = ProductoHandler.GetProductos(id);
 
             using (SqlConnection sqlConnection = new SqlConnection(ConnectionString))
             {
